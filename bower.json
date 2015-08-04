@@ -1,0 +1,19 @@
+{
+  "name": "backbone-layoutmanager-css-transitions",
+  "version": "0.0.0",
+  "authors": [
+    "Jonathan Porta <jonathan@jonathanPorta.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.1",
+    "layoutmanager": "~0.9.7"
+  }
+}
