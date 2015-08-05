@@ -13,7 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "backbone": "~1.2.1",
-    "layoutmanager": "~0.9.7"
-  }
+    "jquery-ui": "~1.11.4"
+  },
+  "homepage": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions"
 }

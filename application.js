@@ -2,8 +2,15 @@ $(function(){
   // Setting this option augments `Backbone.View` to work like `Layout`.
   Backbone.Layout.configure({ manage: true });
 
+  var AnimationView = Backbone.View.extend({
+    afterRender: function() {
+      console.log("Content width: " + $(this.el).width());
+      $(this.el).hide().show( "fold", 1000 );
+    }
+  });
+
   // This will be inserted into both Layouts.
-  var ListView = Backbone.View.extend({
+  var ListView = AnimationView.extend({
     template: "#list",
 
     initialize: function(){
@@ -12,12 +19,13 @@ $(function(){
         console.log(model);
         self.insertView('.list-group', new ItemView({model: model}));
       });
-    },
-
-    // Initialize your jQuery plugins here.
-    afterRender: function() {
-      console.log("Content width: " + $(this.el).width());
     }
+
+    // // Initialize your jQuery plugins here.
+    // afterRender: function() {
+    //   console.log("Content width: " + $(this.el).width());
+    //   $(this.el).hide().show( "fold", 1000 );
+    // }
   });
 
   var ItemView = Backbone.View.extend({
