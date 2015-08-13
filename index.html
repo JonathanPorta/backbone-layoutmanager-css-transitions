@@ -7,7 +7,8 @@
 
     <!-- Quick-n-Dirty Templates -->
     <script type="template" id="layout">
-      <h2>Welcome to Jurassic Park<button>New</button></h2>
+      <h2>Welcome to Jurassic Park <button class='btn btn-success'>Give me a dino!</button></h2>
+      <p>Some dinosaurs from a list somewhere.</p>
       <div class="container-fluid"></div>
     </script>
 
@@ -16,14 +17,14 @@
     </script>
 
     <script type="template" id="item">
-      <li class="list-group-item"><%= value %><button>Remove</button></li>
+      <li class="list-group-item"><button class='btn btn-danger btn-xs'>Remove</button> <%= value %></li>
     </script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <title>Backbone Layout Manager CSS Transition</title>
+    <title>Backbone Layout Manager Transition Example</title>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>

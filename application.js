@@ -18,6 +18,7 @@ $(function(){
       self.listenTo(self.collection, 'add', function(model){
         var newItemView = new ItemView({model: model});
         newItemView.animation.enabled = true;
+        // We have to force a render of the new view here
         self.insertView('.list-group', newItemView).render();
       });
     }
@@ -29,7 +30,7 @@ $(function(){
       enabled: false,
       show: {
         effect: 'fold',
-        duration: 200
+        duration: 100
       },
       hide: {
         effect: 'fold'
@@ -49,24 +50,30 @@ $(function(){
     events: {
       'click button': 'add'
     },
-
     initialize: function(){
       var self = this;
       self.insertView('.container-fluid', new ListView({collection: self.collection}));
     },
     add: function(){
-      this.collection.add([{value: "New List Item"}]);
+      this.collection.random();
     }
   });
 
   var ItemModel = Backbone.Model.extend({});
 
   var ListCollection = Backbone.Collection.extend({
-    model: ItemModel
+    model: ItemModel,
+    random: function(){
+      var self = this;
+      $.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/animals/dinosaurs.json', function(data){
+        var dino = data.dinosaurs[Math.floor((Math.random() * data.dinosaurs.length))];
+        self.add([{value: dino}]);
+      }, 'json');
+    }
   });
 
   // Instantiate some stuff
-  var list = new ListCollection([{value: "New List Item"},{value: "New List Item"},{value: "New List Item"}]);
+  var list = new ListCollection([{value: "brachiosaurus"}]);
 
   layout = new Layout({collection: list});
   // Attach the Layout to the main container.
