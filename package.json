@@ -1,14 +1,26 @@
 {
-  "name": "backbone-layoutmanager-css-transitions",
-  "version": "1.0.0",
-  "description": "",
-  "main": "application.js",
+  "name": "backbone.animationview",
+  "version": "0.0.1",
+  "description": "A simple view that abstracts animation/tranistion when hiding or showing views. Uses jQuery UI and Backbone LayoutManager under the hood.",
+  "main": "backbone.animationview.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jonathan Porta",
-  "license": "ISC",
+  "license": "mit",
   "dependencies": {
     "bower": "^1.4.1"
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions/issues"
+  },
+  "homepage": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions"
 }
