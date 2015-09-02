@@ -24,7 +24,7 @@ $(function(){
     }
   });
 
-  var ItemView = Backbone.View.extend({
+  var ItemView = Backbone.AnimationView.extend({
     template: "#item",
     animation: {
       enabled: false,
