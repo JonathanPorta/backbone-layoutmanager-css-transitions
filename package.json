@@ -17,10 +17,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions.git"
+    "url": "https://github.com/JonathanPorta/backbone.animationview.git"
   },
   "bugs": {
-    "url": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions/issues"
+    "url": "https://github.com/JonathanPorta/backbone.animationview/issues"
   },
-  "homepage": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions"
+  "homepage": "https://github.com/JonathanPorta/backbone.animationview"
 }

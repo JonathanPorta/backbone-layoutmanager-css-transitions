@@ -1,6 +1,6 @@
 {
-  "name": "backbone-layoutmanager-css-transitions",
-  "version": "0.0.0",
+  "name": "backbone.animationview",
+  "version": "0.0.1",
   "authors": [
     "Jonathan Porta <jonathan@jonathanPorta.com>"
   ],
@@ -15,5 +15,5 @@
   "dependencies": {
     "jquery-ui": "~1.11.4"
   },
-  "homepage": "https://github.com/JonathanPorta/backbone-layoutmanager-css-transitions"
+  "homepage": "https://github.com/JonathanPorta/backbone.animationview"
 }
