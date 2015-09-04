@@ -1,5 +1,5 @@
 # Backbone AnimationView for LayoutManager
-A simple view that abstracts animation/tranistion when hiding or showing views. Uses jQuery UI and Backbone LayoutManager under the hood.
+A simple view that abstracts animation/transition when hiding or showing views. Uses jQuery UI and Backbone LayoutManager under the hood.
 
 # Install
 To add this module to your project, use npm:
