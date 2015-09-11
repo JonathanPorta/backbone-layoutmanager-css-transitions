@@ -13,7 +13,12 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-ui": "~1.11.4"
+    "jquery-ui": "~1.11.4",
+    "backbone": "~1.2.3",
+    "layoutmanager": "~0.9.7"
   },
-  "homepage": "https://github.com/JonathanPorta/backbone.animationview"
+  "homepage": "https://github.com/JonathanPorta/backbone.animationview",
+  "resolutions": {
+    "backbone": "~1.1"
+  }
 }
